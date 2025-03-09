@@ -1,9 +1,9 @@
-const binary_search = (array, key) => {
+const binarySearch = (array, key) => {
   let first = 0;
   let last = array.length - 1;
 
   while (first <= last) {
-    let midpoint = Math.floor(first + last / 2);
+    let midpoint = Math.floor((first + last) / 2);
 
     if (array[midpoint] === key) {
       // best case scenario / or when the algorithm finds the right answear
@@ -21,7 +21,7 @@ const binary_search = (array, key) => {
 const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // in this case the list HAS TO BE SORTED - otherwise the implementation won't work
 
-const result = binary_search(list, 10);
+const result = binarySearch(list, 10);
 
 console.log(result);
 

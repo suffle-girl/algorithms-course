@@ -1,4 +1,4 @@
-const linear_search = (array, key) => {
+const linearSearch = (array, key) => {
   // returns the index positon of the key if found, else returns -1
   for (i = 0; i < array.length; i++) {
     if (array[i] === key) {
@@ -10,7 +10,7 @@ const linear_search = (array, key) => {
 
 const list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const result = linear_search(list, 5);
+const result = linearSearch(list, 5);
 
 console.log(result);
 
